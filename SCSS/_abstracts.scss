@@ -1,0 +1,66 @@
+/** FONTS **/
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap');
+//7-8 satırlardaki font tanımlamalarının çalışması için google font api dahil etmemiz gerekiyor
+
+/** VARIABLES **/
+
+$primary-font: 'Changa', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+$primary-color: #E51515;
+$secondary-color: #14151A;
+$date-color: #FFB320;
+$comment-color: #08ABBD;
+$gray-color: #9F9F9F;
+$light-color: #FEFEFE;
+
+/** UTILITIES**/
+
+.bg {
+    &-dark {
+        background-color: $secondary-color;
+    }
+
+    &-light {
+        background-color: $light-color;
+    }
+}
+
+.ml {
+    &-2 {//ml-2
+        margin-left: 2rem;
+    }
+
+    &-3 {//ml-3
+        margin-left: 2rem;
+    }
+
+    &-4 {//ml-4
+        margin-left: 2rem;
+    }
+
+    &-5 {//ml-5
+        margin-left: 2rem;
+    }
+}
+
+.text-light {
+    color: $light-color;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: $primary-color
+}
+
+/** MIXINS **/
+
+ @mixin flex-display($display,$align-items,$justify-content){
+    display: $display; //flex olursa container içindeki elemanları yan yana dizer
+    align-items: $align-items; //center olursa elemanları dikey olarak ortalar
+    justify-content: $justify-content; //space-between olursa elemanlar arasında yatay eksende eşit mesafe olmasını sağlar
+ }
